@@ -1,7 +1,0 @@
-1. VISTA LOGIN: Esta vista viene con la opción de registrarse como cliente
-2. VISTA REGISTRO USUARIO (Cliente)
-3. VISTA EDITAR DATOS USUARIO (Cliente)
-4. VISTA PRODUCTOS EN STOCK, Menú para ver los productos por categoría y icono para ir a resumen carrito
-5. VISTA DETALLE DE PRODUCTO
-6. VISTA RESUMEN CARRITO DE COMPRAS
-7. VISTA RESUMEN COMPRA
