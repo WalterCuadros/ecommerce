@@ -19,6 +19,48 @@ header{
     color: rgba(125,125,125,.5);
     border-color: rgba(226, 223, 208, 0.829)!important;
 }
+.masthead {
+    margin: auto;
+    height: 50vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu{
+    margin: auto;
+    background-color: rgb(51, 133, 187);
+    padding: 12px;
+}
+.list-products{
+    margin: auto;
+    padding: 30px;
+}
+.card{
+    padding: 0px 10px 0px 10px;
+    margin-top: 5px;
+    border: none!important;
+}
+.ul-product{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ver-detalle{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.ver-detalle>button{
+    color: white !important;
+    background-color: #f33f3f!important;
+}
+.ver-detalle>button:hover{
+    background-color: rgb(51, 133, 187) !important;
+}
 .btn-white{
     color: white !important;
 }
