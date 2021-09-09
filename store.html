@@ -7,6 +7,7 @@
     <title>Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/store.css">
+    <script src="https://kit.fontawesome.com/68beeb19ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -20,44 +21,149 @@
                 <li  class="nav-item dropdown">
                     <a class="nav-item nav-link  mr-md-2" href="#">Nombre de usuario</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                    <i class="fas fa-cart-plus"></i>
+                    Ir a carrito
+                  </button>
+                </li>
+                <li class="nav-item">
                     <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
                       Cerrar Sesión
                     </button>
-                  </li>
+                </li>
               </ul>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="card">
-            <div class="card-header">
-              AQUÍ VA EL CONTENIDO DEL LISTADO DE LOS PRODUCTOS
+    <div class="container">
+      <div class="row">
+        <div class="masthead col-12 col-md-11">
+          <div class="container">
+          </div>
+        </div> 
+        <div class="col-12 col-md-11 menu">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Categoría 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categoría 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categoría 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-11 list-products">
+         <div class="row">
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="">Fusce dictum finibus</h4>
+                      <p class="">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                          <li><p class="">$45 / $55 </p></li>
+                          <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum, felis vel tempus commodo, lacus metus euismod dui, at fermentum velit diam eu odio. Praesent sed quam ut sapien ullamcorper tincidunt. Proin malesuada sit amet ligula nec semper. Quisque euismod turpis nec justo luctus, eu feugiat elit accumsan. Curabitur bibendum erat mauris, non lobortis dolor pellentesque in. Suspendisse in fermentum diam, quis blandit augue. Phasellus a eleifend eros. Nullam lacinia magna non ultricies ornare. Mauris egestas sem mauris, sed suscipit nibh sodales ut. Sed consequat blandit est, quis tincidunt metus auctor vel.
-    
-                    Donec mollis lacus at nisl malesuada, sed malesuada ex ullamcorper. Donec a mauris ornare, blandit mauris vitae, tempus nulla. Vestibulum accumsan laoreet massa, eu placerat lacus ullamcorper eu. Nam rutrum dui nec aliquam vehicula. Sed eget pretium quam, gravida tincidunt nunc. Nullam libero purus, imperdiet sit amet elementum quis, bibendum et mauris. In tincidunt sapien vel massa laoreet vulputate. Nulla ullamcorper lobortis facilisis. Ut posuere, nisi laoreet iaculis molestie, libero nulla laoreet nisi, id congue ante mauris ac sapien. Aliquam tempor id lectus vel laoreet. Fusce ut commodo purus. Cras ut velit augue. Ut non molestie odio, sit amet dignissim sapien. Nulla faucibus maximus dapibus. Fusce euismod, lectus eu malesuada sodales, mauris mi condimentum ligula, nec pulvinar lacus lorem at risus.
-                    
-                    Quisque imperdiet eu sem venenatis semper. Cras pellentesque turpis vel neque hendrerit dictum. Nunc in facilisis tortor, sit amet tincidunt libero. Maecenas malesuada libero in purus posuere ultricies. Praesent id laoreet purus. Integer condimentum nulla pulvinar enim dictum, in dapibus mi pellentesque. Morbi ut dolor non enim aliquet cursus sit amet scelerisque lorem. Sed eleifend quam nec eros lacinia iaculis quis eget erat. Nam vitae malesuada lacus, in tempor arcu. Proin non sollicitudin magna. Curabitur tincidunt luctus blandit.
-                    
-                    Donec interdum massa laoreet venenatis sollicitudin. Etiam euismod orci lacus, et egestas libero sagittis sed. Maecenas commodo risus aliquam dignissim sodales. Aliquam euismod arcu dapibus ex condimentum condimentum. Donec eget dolor finibus, lobortis ipsum blandit, mollis purus. Phasellus tincidunt velit ac euismod porta. Vivamus vulputate porta finibus. Nunc convallis et urna vitae aliquet. Fusce nec auctor nisl. Quisque lacinia, nulla id maximus pulvinar, diam ex rhoncus nibh, id finibus felis orci sed nunc. Sed tincidunt sapien mi, sit amet semper metus pulvinar eu. Mauris laoreet tellus sed bibendum iaculis. Mauris convallis pharetra sapien eu lacinia.
-                    
-                    Morbi mattis elementum tellus vitae iaculis. Nullam tempor bibendum mi interdum accumsan. Aliquam vel lacinia turpis, sit amet condimentum massa. Praesent tincidunt eu tortor ut maximus. Proin eget finibus magna, sed molestie est. Ut vestibulum tellus sed tellus accumsan venenatis. Proin laoreet euismod libero in iaculis. Mauris sodales, felis sit amet faucibus porttitor, velit purus egestas ex, sit amet lacinia ex turpis malesuada nulla. Aliquam rutrum leo vel ipsum luctus hendrerit. In sit amet laoreet dui, eu sollicitudin tortor.
-                    
-                    Nullam ac fermentum sapien. Morbi neque risus, ornare at varius rhoncus, mattis nec augue. Mauris risus lectus, scelerisque ut nulla sit amet, consectetur tempor purus. Etiam pretium volutpat accumsan. Donec odio risus, vulputate at placerat non, sagittis ac magna. Donec rhoncus sit amet erat vel hendrerit. Etiam felis felis, tincidunt eget scelerisque vitae, auctor vitae nunc. Donec in magna in dolor rhoncus dapibus ut vel elit. Duis id dolor non dui faucibus dictum.
-                    
-                    Morbi rhoncus volutpat dolor, eget lobortis nulla ultricies quis. Duis nunc lorem, pretium in scelerisque et, suscipit at nunc. Praesent id nisi hendrerit, gravida nunc non, tempor enim. Duis interdum neque urna, dignissim sagittis ex tristique sed. Fusce aliquam laoreet dolor quis pharetra. Nullam dignissim dui a nisl rutrum, sed ultricies est ultricies. Nullam eget pretium velit. Nullam viverra, arcu non posuere interdum, odio tellus pellentesque lorem, nec bibendum augue dui porttitor ex. Quisque elit dolor, posuere eu risus quis, elementum tincidunt neque.
-                    
-                    Donec ac elit vitae ex pellentesque sollicitudin nec ac diam. Curabitur id dui ipsum. Vivamus libero tellus, tempus eget molestie vel, pretium nec erat. Nam gravida semper purus. Donec interdum sem magna, quis iaculis justo ultricies eget. Curabitur luctus velit et lectus ultrices, pellentesque viverra neque tristique. Curabitur et orci tristique, rutrum est pellentesque, bibendum enim. Praesent malesuada dictum nunc non ullamcorper.
-                    
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum, felis vel tempus commodo, lacus metus euismod dui, at fermentum velit diam eu odio. Praesent sed quam ut sapien ullamcorper tincidunt. Proin malesuada sit amet ligula nec semper. Quisque euismod turpis nec justo luctus, eu feugiat elit accumsan. Curabitur bibendum erat mauris, non lobortis dolor pellentesque in. Suspendisse in fermentum diam, quis blandit augue. Phasellus a eleifend eros. Nullam lacinia magna non ultricies ornare. Mauris egestas sem mauris, sed suscipit nibh sodales ut. Sed consequat blandit est, quis tincidunt metus auctor vel.
-                </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
+                      <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                        <li><p class="">$45 / $55 </p></li>
+                        <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
+                      <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                        <li><p class="">$45 / $55 </p></li>
+                        <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                    </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
+                      <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                        <li><p class="">$45 / $55 </p></li>
+                        <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
+                      <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                        <li><p class="">$45 / $55 </p></li>
+                        <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="card col-12 col-md-4">
+              <div class="card-body">
+                <article >
+                  <figure>
+                    <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
+                    <figcaption>
+                      <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
+                      <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                      <ul class="ul-product"> 
+                        <li><p class="">$45 / $55 </p></li>
+                        <li class="ver-detalle"> <button type="button" class="btn btn-sm">Ver producto</button></li>
+                      </ul>
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
             </div>
           </div>
-    </section>
+        </div>
+      </div>
+
+    </div>
     <footer class="page-footer font-small teal pt-4">
 
         <!-- Footer Text -->
