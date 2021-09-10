@@ -4,30 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/stylen.css">
     <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68beeb19ef.js" crossorigin="anonymous"></script>
     <title>Resumen de compra</title>
 </head>
 <body>
     <div  class="cabeza">
         <header>
-            <div class="user"><a href="log.html">Usuario</a></div>
-            <div class="titulo"><center><h1>e-Commerce</h1></center></div>
-            <div class="logo"><img src="\img\logo.png" alt="eCommerce Logo" width="80" height="80"/></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="img\logo.png" width=60px height=60px>&nbsp; e-Commerce</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-md-auto">
+                    <li  class="nav-item dropdown">
+                        <a class="nav-item nav-link  mr-md-2" href="#">Nombre de usuario</a>
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                        <i class="fas fa-cart-plus"></i>
+                        Ir a carrito
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                          Cerrar Sesión
+                        </button>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
         </header>
-        <nav class="barra">
-            <ul>
-                <il><a href="index.html"><i class="fas fa-home"></i></a></il>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <il><a href="login.html">Login</a></il>&nbsp;&nbsp;&nbsp;&nbsp;
-                <il><a href="store.html">Tienda</a></il>
-            </ul>
-        </nav>
+        <div class="barra">
+            <a href="index.html" ><i class="fas fa-home"></i>Inicio</a>
+            <div class="miniMenu">
+                <button class="boton">Usuario
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="miniMenu-contenido">
+                    <a href="login.html" >Login</a>
+                    <a href="datos.html" >Datos</a>
+                </div>
+            </div>
+            <a href="store.html" >Tienda</a>
+            <a href="#" >Contactanos</a>
+        </div>
     </div>
+    <br>    
     <div class="central">
         <center>
         <div class="factura">
         <h2>Resumen de compra</h2>
-        <h4>Pepito Peres _____ 80.331.215</h4>
+        <h4>Pepito Perez _____ 80.331.215</h4>
         <table border=3>
             <tr>
                 <th>Codigo</th>
@@ -63,7 +94,7 @@
             </tr>
         </table>
         <div class="finalFactura">
-            <p>Puntos de la compra: _____ 150</p>
+            <p>Puntos de la compra: 150</p>
             <input type="button" value="Cancelar">&nbsp;&nbsp;&nbsp;
             <input type="button" value="Pagar">
         </div><br/>
