@@ -1,0 +1,200 @@
+/* Autor: Camilo Moreno*/
+.logo{
+    border-color: azure;/*borde de la caja*/
+    border-width: 5px;
+    border-style: ridge;
+    margin: 10px;
+}
+
+#menu nav{
+    background-color: rgb(36, 93, 131);
+    display: flex;       
+}
+#menu ul{
+    display: flex;
+    list-style: none;
+    margin: 40px 10px 10px 760px;
+}
+
+#menu ul a{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(36, 93, 131);
+    color: white;
+    margin: 5px ;
+    text-align: center;/*centra el texto*/
+    text-decoration: none;/*quita el subrayado*/
+    padding-top: 9px;/*para bajar texto*/
+}
+
+#menu li a{
+    display: block;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(36, 93, 131);
+    color: white;
+    margin: 5px ;
+    text-align: center;/*centra el texto*/
+    text-decoration: none;/*quita el subrayado*/
+    padding-top: 9px;/*para bajar texto*/
+    border-color: white;/*borde de la caja*/
+    border-width: 1px;
+    border-style: ridge;
+}
+
+/*Evento cuando el cursor se ponga sobre el menu haga una accio*/
+#menu li a:hover{
+    background-color:white;/*en este ejemplo cambia el color*/
+    color: black;
+}
+
+.foot1{
+    display: flex;
+    background-color:rgb(51, 133, 187) ;
+}
+.foot2{
+    background-color:rgb(36, 93, 131) ;
+}
+.big_foot{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border-style: none;
+    display: flex;
+}
+
+.small_foot1{
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+}
+.small_foot2{
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+}
+
+
+
+
+#menu button a{
+    color: white;
+    text-align: center;/*centra el texto*/
+    text-decoration: none;/*quita el subrayado*/
+    /*padding: 9px 0px 0px 0px;*//*para agregar espacio al texto dento de la caja Up rigth down left*/
+    padding-top: 9px;/*para bajar texto*/
+    /*margin-right: 80px;*/
+
+}
+
+.container{
+    display: block;
+    /*background-color: orange;*/
+}
+.carrito_desc{
+    width: 70%;
+    display: flex;
+    background-color: rgb(51, 133, 187) ;
+    text-align:center;
+    margin: 20px;
+    padding-top: 9px;/*para bajar texto*/
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.producto_carro{
+    width: 70%;
+    display: flex;
+    /*background-color: red;*/
+    text-align:center;
+    margin: 20px;
+    padding-top: 9px;/*para bajar texto*/
+    border-bottom-style: ridge;
+}
+.detalle_desc{
+    margin: 5px 350px 10px 10px;
+}
+.precio_desc{
+    margin: 5px 50px 10px 10px;
+}
+.cantidad_desc{
+    margin: 5px 50px 10px 10px;
+}
+.eliminar_desc{
+    margin: 5px 50px 10px 10px;
+}
+.total_desc{
+    margin: 5px 50px 10px 10px;
+}
+
+.descripcion_carro{
+    display: flex;
+    width: 49%;
+    /*background-color: tomato;*/
+    margin: 5px 0px 10px 10px;
+}
+
+.precio_carro{
+    width: 10%;
+    /*background-color: blanchedalmond;*/
+    margin: 25px 15px 10px 10px;
+    text-align: center;
+}
+.cantidad_carro{
+    width: 5%;
+    margin: 23px 38px 10px 10px;
+}
+.eliminar_carro{
+    margin: 22px 50px 10px 10px;
+}
+.total_carro{
+    width: 10%;
+    /*background-color: blanchedalmond;*/
+    margin: 25px 30px 10px 10px;
+}
+.product-img{
+    margin: 5px 10px 10px 10px;
+}
+
+.suma{
+    margin-left: 824px;
+    width: 11%;
+    /*background-color: yellowgreen;*/
+    border-bottom-style: ridge;
+}
+.gran_total{
+    margin-left: 824px;
+    width: 11%;
+    font-size: 110%;
+    /*background-color: red;*/
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.diseño1{
+    display: inline-block;
+    width: 50%;
+    /*background-color: blanchedalmond;*/
+}
+.diseño2{
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    /*background-color: yellow;*/
+}
+
+
+.boton a{
+    display: inline-block;
+    padding: 5px;   
+    color: black;
+    text-decoration: none;
+    cursor: pointer;/*cambiar puntero mouse*/
+}
+
+.botones{
+
+    padding: 10px 5px 10px 5px;
+    /*background-color: tomato;*/
+    width: 20%;
+        
+    
+}
