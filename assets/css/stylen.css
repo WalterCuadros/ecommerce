@@ -100,19 +100,29 @@ header{
   .miniMenu:hover .miniMenu-contenido {
     display: block;
   }
-
+#login{
+  display: block;
+}
 .factura{
     width: 50%;
     border-radius: 2%;
     border: solid;
     border-color:#C26D53;
-    background-color: #F6D5C0;
+    background-color: rgba(226, 223, 208, 0.829)!important;
 }
 .finalFactura{
     text-align: right;
     padding-right: 15px;
 }
-.pie{
-    width: 100%;
-    display: flex;
+.finalFactura>button{
+    color: white !important;
+    background-color: #f33f3f!important;
+}
+.finalFactura>button:hover{
+    background-color: rgb(51, 133, 187) !important;
+}
+.footer-content{
+    padding-top: 20px;
+    background-color: rgb(51, 133, 187) !important;
+    color:white
 }
