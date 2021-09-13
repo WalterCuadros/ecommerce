@@ -5,28 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/carro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bb2e21a100.js" crossorigin="anonymous"></script>
     <title>Carrito de Compras</title>
 </head>
 <body>
     <!--header colocar logos y menu-->
     <header>
-        <!--Crear logo-->
-        <div id="menu">
-            <!--declarar menu-->
-            <nav>
-                <!--Crear logo-->
-                <a href="store.html" title="ir a store">
-                <img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/>
-                </a> 
-                <ul>
-                <!--crear items a la lista-->
-                    <a href="">Nombre de Usuario</a>
-                    <li><a href="bill.html" ><i class="fas fa-money-bill-alt"></i> Ir a Pagar</a></li>
-                    <li><a href="index.html" >Cerrar Sesión</a></li>
-                </ul>
-            </nav> 
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="store.html"><img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-md-auto">
+                <li  class="nav-item dropdown">
+                    <a class="nav-item nav-link  mr-md-2" href="index.html">Nombre de usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bill.html">
+                        <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" >
+                            <i class="fas fa-money-bill-alt"></i>
+                            Ir a Pagar
+                        </button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">
+                        <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" >
+                           Cerrar Sesión      
+                        </button>
+                    </a> 
+                </li>
+              </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -34,147 +48,137 @@
            <h1>RESUMEN CARRITO DE COMPRAS</h1>
            <h2>Su carrito de compras contiene:</h2>
         </center>
-            <div class="container">
-                <center>
-                    <div class="carrito_desc">
-                        <div class="detalle_desc">
-                            <span>Detalle del producto</span>
-                        </div>
-                        <div class="precio_desc">
-                            <span>Precio</span>
-                        </div>
-                        <div class="cantidad_desc">
-                            <span>Cantidad</span>
-                        </div>
-                        <div class="total_desc">
-                            <span>Total</span>
-                        </div>
-                        <div class="eliminar_desc">
-                            <span>Eliminar</span>
-                        </div>
-                    </div>
-                        
-                    <div class="producto_carro">
-                        <div class="descripcion_carro">
-                            
-                            <img class="product-img" src="assets/img/logo1.png" width="90" height="48" alt="ECOMMERCE"/>
-                            <h4>Nombre de producto</h4>
-                        </div>
-                        <div class="precio_carro">   
-                                <span class="price">$68.00</span>             
-                        </div>
-                        <div class="cantidad_carro">             
-                                <input type="number" id="catidad" name="cantidad" value="10" min="1" max="100">                 
-                        </div>
-                        <div class="total_carro">                     
-                                <span class="price">$120.00</span>
-                        </div>
-                        <div class="eliminar_carro">
-                            <button>X</button> 
-                        </div>
-                    </div>
-
-                    <div class="producto_carro">
-                        <div class="descripcion_carro">
-                            
-                            <img class="product-img" src="assets/img/logo1.png" width="90" height="48" alt="ECOMMERCE"/>
-                            <h4>Nombre de producto</h4>
-                        </div>
-                        <div class="precio_carro">   
-                                <span class="price">$68.00</span>             
-                        </div>
-                        <div class="cantidad_carro">             
-                                <input type="number" id="catidad" name="cantidad" value="10" min="1" max="100">                 
-                        </div>
-                        <div class="total_carro">                     
-                                <span class="price">$120.00</span>
-                        </div>
-                        <div class="eliminar_carro">
-                            <button>X</button> 
-                        </div>
-                    </div>
-
-                    <div class="producto_carro">
-                        <div class="descripcion_carro">
-                            
-                            <img class="product-img" src="assets/img/logo1.png" width="90" height="48" alt="ECOMMERCE"/>
-                            <h4>Nombre de producto</h4>
-                        </div>
-                        <div class="precio_carro">   
-                                <span class="price">$168.00</span>             
-                        </div>
-                        <div class="cantidad_carro">             
-                                <input type="number" id="catidad" name="cantidad" value="10" min="1" max="100">                 
-                        </div>
-                        <div class="total_carro">                     
-                                <span class="price">$1200.00</span>
-                        </div>
-                        <div class="eliminar_carro">
-                            <button>X</button> 
-                        </div>
-                    </div>
-                </center>
-                    
-                <div class="suma">
-                    <label class="diseño1">Sub total:</label>
-                    <label class="diseño2">$200.00</label>
-                    <br/><br/>
-                    <label class="diseño1">Flete:</label> 
-                    <label class="diseño2">$0.00</label>
-                    <br/><br/>
-                    <label class="diseño1">Descuento:</label>
-                    <label class="diseño2">$45.00</label>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="diseño1" scope="col">Cod.</th>
+                            <th class="diseño1" scope="col">Detalle del producto</th>
+                            <th class="diseño1" scope="col">Precio</th>
+                            <th class="diseño1" scope="col">Cantidad</th>
+                            <th class="diseño1" scope="col">Total</th>
+                            <th class="diseño1" scope="col">Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="cod" scope="row">1</th>
+                            <td class="descripcion"><img src="assets/img/logo1.png" width="70" height="48" alt="ECOMMERCE"/> Nombre del producto </td>
+                            <td class="precio_carro">$120,00</td>
+                            <td class="cantidad_carro"><input type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
+                            <td class="total_carro">$1200,00</td>
+                            <td class="eliminar_carro"><button >X</button> </td> 
+                          </tr>
+                          <tr>
+                            <th class="cod" scope="row">2</th>
+                            <td class="descripcion"><img src="assets/img/logo1.png" width="70" height="48" alt="ECOMMERCE"/> Nombre del producto </td>
+                            <td class="precio_carro">$1120,00</td>
+                            <td class="cantidad_carro"><input type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
+                            <td class="total_carro">$11200,00</td>
+                            <td class="eliminar_carro"><button >X</button> </td> 
+                          </tr>
+                          <tr>
+                            <th class="cod" scope="row">3</th>
+                            <td class="descripcion"><img src="assets/img/logo1.png" width="70" height="48" alt="ECOMMERCE"/> Nombre del producto </td>
+                            <td class="precio_carro">$820,00</td>
+                            <td class="cantidad_carro"><input class="numero" type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
+                            <td class="total_carro">$8200,00</td>
+                            <td class="eliminar_carro"><button >X</button> </td> 
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
-                <div class="gran_total">
-                    <label class="diseño1"><strong>Total:</strong></label> 
-                    <label class="diseño2"><strong>$450.00</strong></label> 
-                </div>
-                <center>
-                    <div class="botones">
-                        <button class="boton"><a href="bill.html">Pagar</a></button>
-                        <button class="boton"><a href="store.html">Volver</a></button>
+                <div class="container">
+                    <div class=" row justify-content-center">
+                      <div class="col-4">
+                        <table class="table">
+                            <tbody >
+                            <tr>
+                                <td >Sub Total</td>
+                                <td class="suma"> $200,00</td>
+                            </tr>
+                            <tr>
+                                <td>IVA 19%</td>
+                                <td class="suma"> $38,00</td>
+                            </tr>
+                            <tr>
+                                <td>Flete</td>
+                                <td class="suma"> $10,00</td>
+                            </tr>
+                            <tr>
+                                <td>Descuento</td>
+                                <td class="suma"> $45,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td class="suma"> $293,00</td>
+                            </tr>
+                            </tbody>
+                        </table>   
+                      </div>
                     </div>
-                </center>
+                </div>  
+                <div class="col-12">
+                    <a href="store.html">
+                        <button class="boton" type="button" >
+                           Volver     
+                        </button>
+                    </a> 
+                    <a href="bill.html">
+                        <button class="boton" type="button" >
+                            <i class="fas fa-money-bill-alt"></i>
+                            Pagar
+                        </button>
+                    </a>
+                </div>
             </div>
+        </div>     
     </main>
     
-    <footer>
-        <div class="foot1">
-            <div class="big_foot">
-                    <div class="small_foot1">  
-                        <h1>Texto 1</h1>
-                        <p>Sin advertencia previa excepto un leve movimiento
-                            de la mano de O'Brien — le inundó una oleada
-                            dolorosa. Era un dolor espantoso porque no sabía
-                            de dónde venía y tenía la sensación de que le
-                            habían causado un daño mortal. No sabía si era un
-                            dolor interno o el efecto de algún recurso eléctrico,
-                            pero sentía como si todo el cuerpo se le
-                            descoyuntara. Aunque el dolor le hacía sudar por
-                            la frente, lo único que le preocupaba es que se le
-                            rompiera la columna vertebral. Apretó los dientes
-                            y respiró por la nariz tratando de estarse callado lo
-                            más posible. 
-                            </p>
-                    </div>
-                    <div class="small_foot2">  
-                        <h1>Texto 1</h1>
-                        <p>Lo más terrible de 1984 es que ha trascendido el ámbito puramente literario y podemos encontrar
-                            ecos de la novela en la vida cotidiana. Cabe hablar de la capacidad anticipatoria de la novela, un
-                            asunto que ha levantado multitud de controversias y que en torno al año 1984 se convirtió
-                            prácticamente en el asunto del día en las columnas de prensa. ¿Qué había en al año 1984 de la
-                            novela 1984?, se preguntaban periodistas, columnistas y tertulianos. La conclusión más extendida
-                            era que Orwell había fracasado como profeta: la dictadura predicha en sus páginas no había tenido
-                            lugar. El mundo parecía respirar tranquilo: el Gran Hermano nunca gobernó. Orwell ya no era
-                            fiable. 
-                            </p>
-                    </div>
+    <footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left footer-content">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+                repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+                harum esse fugiat. Itaque, culpa?</p>
+      
             </div>
-        </div>    
-        <center class="foot2">
-            Curso HTML
-            <p>© 2021 Copyright: MISIONTIC ECOMMERCE</p>
-        </center>
-    </footer> 
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+                commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+                excepturi hic.</p>     
+            </div>
+            <!-- Grid column -->     
+          </div>
+          <!-- Grid row -->     
+        </div>
+        <!-- Footer Text -->    
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+          <a href="https://mdbootstrap.com/"> MISIONTIC ECOMMERCE</a>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
 </body>
 </html>
