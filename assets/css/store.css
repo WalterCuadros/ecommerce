@@ -41,25 +41,17 @@ header{
     margin-top: 5px;
     border: none!important;
 }
-.ul-product{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.ver-detalle{
-    display: inline-block;
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 13px;
-    font-weight: 500;
-}
 .ver-detalle>button{
     color: white !important;
     background-color: #f33f3f!important;
 }
 .ver-detalle>button:hover{
     background-color: rgb(51, 133, 187) !important;
+    margin-left: 0px;
+}
+.cantidad-producto{
+    border: 2px dashed black;
+    margin-right: 0px;
 }
 .btn-white{
     color: white !important;
