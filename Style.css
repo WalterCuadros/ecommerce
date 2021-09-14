@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     width:100%;
     text-transform: uppercase;
-    background:#40576d;
+    background: url(assets/bodega.jpg)no-repeat 0px 0px;
     background-size: cover;
     padding-top: 200px;
 }
@@ -10,13 +10,9 @@ body{
 .login-form{
     width:28%;
     margin: 0 auto;
-    background: url(assets/bodega.jpg)no-repeat 0px 0px;
+    
     background-size: cover;
     background-position: center;
-    padding: 30px 33px 67px;
-    border-top: 6px solid;
-    box-shadow: 0px 35px 44px -22px rgba(0, 0 ,0, 0.72);
-    
 }
 
 h1{
@@ -25,7 +21,7 @@ h1{
    font-weight: bold;
    margin-top: 55px;
    margin-bottom: 35px;
-   color:rgba(0, 255, 200, 0.644);
+   color:rgba(255, 30, 0, 0.644);
 
 }
 form{
@@ -35,12 +31,12 @@ form p{
     font-size: 15px;
     margin-top: 44px;
     padding: 0.3;
-    color:rgba(0, 255, 200, 0.644);
+    color:rgba(255, 60, 0, 0.644);
 }
 .login-form form input[type="text"], input[type="password"]{
     outline:none;
     font-size: 1em;
-    color:rgba(0, 255, 200, 0.644);
+    color:rgba(255, 30, 0, 0.644);
     padding: 15px 10px;
     margin : 0auto;
     width: 95%;
@@ -61,7 +57,7 @@ input[type="validar"]{
     font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
-    background:#00c3ff;
+    background:rgba(255, 30, 0, 0.644);
     border: none;
     color:rgba(0, 0, 0, 0.644);
     text-align:center;
