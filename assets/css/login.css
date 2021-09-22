@@ -35,7 +35,7 @@ nav, .footer-copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/ecommerce/assets/bodega.jpg);
+    background-image: url('../img/bodega.jpg');
     background-size: cover;
 }
 
