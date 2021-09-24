@@ -5,6 +5,9 @@ header{
     top: 0;
     z-index: 1071;
 }
+#logo{
+    width: 46%;
+}
  nav, .footer-copyright {
     background-color: rgb(36, 93, 131) !important;
     padding: 20px !important;
