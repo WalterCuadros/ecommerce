@@ -1,29 +1,51 @@
+header{
+    position: static;
+    z-index: 0;
+}
+nav, .footer-copyright {
+    background-color: rgba(255, 93, 29, 0.644);
+    padding: 20px !important;
+    border-bottom: 1px solid rgb(36, 34, 34);
+    color: white;
+}
+
 body{
     font-family: sans-serif;
     width:100%;
     text-transform: uppercase;
-    background: url(assets/bodega.jpg)no-repeat 0px 0px;
+    background: url(assets/img/bodega.jpg) no-repeat 0px 0px;
     background-size: cover;
-    padding-top: 200px;
+    
 }
+
 
 .login-form{
-    width:28%;
-    margin: 0 auto;
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid#ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+
+
+   
     
-    background-size: cover;
-    background-position: center;
 }
 
-h1{
+h1 {
    text-align: center;
    font-size:  60px;
    font-weight: bold;
    margin-top: 55px;
    margin-bottom: 35px;
-   color:rgba(255, 30, 0, 0.644);
+   color:rgba(255, 93, 29, 0.644);
 
 }
+
 form{
     margin: 0 auto;
 }
@@ -31,17 +53,17 @@ form p{
     font-size: 15px;
     margin-top: 44px;
     padding: 0.3;
-    color:rgba(255, 60, 0, 0.644);
+    color:rgba(255, 93, 29, 0.644);
 }
 .login-form form input[type="text"], input[type="password"]{
     outline:none;
     font-size: 1em;
-    color:rgba(255, 30, 0, 0.644);
+    color:rgba(255, 93, 29, 0.644);
     padding: 15px 10px;
     margin : 0auto;
     width: 95%;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgba(255, 93, 29, 0.644);
     display: block;
     background: transparent;
 
@@ -57,7 +79,7 @@ input[type="validar"]{
     font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
-    background:rgba(255, 30, 0, 0.644);
+    background:#ff7300;
     border: none;
     color:rgba(0, 0, 0, 0.644);
     text-align:center;
@@ -73,14 +95,14 @@ input[type="submit"]:hover{
 .login-form a {
     display:block;
     font-size:15px;
-    color:rgba(0, 0, 0, 0.644);
+    color:rgba(255, 255, 255, 0.644);
     text-align:center;
     margin: 31px;
     transition: 0.3s all;
 }
 
 .login-form a :hover{
-    color:#000000;
+    color:#ffffff;
     transition:0.3s all;
 
 }

@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">LOGO</a>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img id="logo" src="assets/img/logo1.png" class="img-fluid" alt="Responsive image"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,7 +34,33 @@
                 </li>
               </ul>
             </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg py-3 shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand">
+              <!-- Logo Image -->
+              <img src="assets/img/logo1.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+              <!-- Logo Text -->
+              <span class="text-uppercase font-weight-bold">ECOMMERCE</span>
+            </a>
+        
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                   <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                  <i class="fas fa-cart-plus"></i>
+                  Ir a carrito
+                </button></li>
+                <li class="nav-item"> <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                  Cerrar Sesión
+                </button></li>
+              </ul>
+            </div>
+          </div>
         </nav>
+        
     </header>
     <div class="container">
       <div class="row">
@@ -163,45 +189,6 @@
         </div>
       </div>
     </div>
-    
-    <!-- <div class="modal fade " id="modalProduct" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle"  aria-modal="true" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nombre del producto</h5>
-
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                <div class="card col-12">
-                  <div class="card-body">
-                    <article >
-                      <figure>
-                        <img src="assets/img/product.jpg" alt="Image" class="img-fluid " />
-                        <figcaption>
-                          <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
-                          <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
-                          <div class="row"> 
-                            <div class=" col-12 col-md-5"><p class="">$45 / $55 </p></div>
-                            <div class="ver-detalle col-12 col-md-7"> <button type="button" class="btn btn-sm"  data-toggle="modal" data-target="#modalProduct">Ver producto</button></div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </article>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Comprar</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="modal fade" id="modalProduct" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -219,16 +206,33 @@
                   <h4 class="tm-gallery-title">Fusce dictum finibus</h4>
                   <p class="tm-gallery-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
                   <div class="row"> 
-                    <div class=" col-12 col-md-5"><p class="">$45 / $55 </p></div>
-                    <div class="col-12 col-md-7"> <div class="row"><div class="col-12 col-md-7 cantidad-producto">Cantidad Producto</div><div class=" ver-detalle col-12 col-md-5"><button type="button" class="btn btn-sm"><i class="fas fa-plus"></i></button></div></div>
+                      <div class=" col-12 col-md-4"><p class="">$45 / $55 </p>
+                      </div>
+                      <div class="col-12 col-md-8">
+                  
+                          <form id="agregarProducto" class="form-agregar" novalidate>
+                            <label for="cantidad">Cantidad</label>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                  <input type="number" class="form-control" id="cantidad"    value="1" required>
+                                  <div class="valid-feedback">
+                                    OK!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Ingresa cantidad valida.
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <button class="btn btn-primary" type="submit" onclick="comprueba()">Agregar</button>
+                              </div>
+                            </div>                              
+                          </form>
+                        
+                      </div>
                   </div>
                 </figcaption>
               </figure>
             </article>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
@@ -284,5 +288,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
-</body>
+    <script src= "assets/js/store.js"></script>
+  </body>
 </html>
