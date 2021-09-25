@@ -1,0 +1,200 @@
+<!--Autor Walter Giovanny Cuadros Rincón-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/carro.css">
+    <script src="https://kit.fontawesome.com/68beeb19ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand">
+              <!-- Logo Image -->
+              <img src="assets/img/logo1.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+              <!-- Logo Text -->
+              <span class="text-uppercase font-weight-bold">ECOMMERCE</span>
+            </a>
+        
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                   <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light cart-button" type="button" href="#" >
+                  <i class="fas fa-cart-plus"></i>
+                </button></li>
+                <li class="nav-item"> <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                  Cerrar Sesión
+                </button></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+    </header>
+    <div class="container">
+      <main>
+        <center>
+          <h1>RESUMEN CARRITO DE COMPRAS</h1>
+          <h2>Su carrito de compras contiene:</h2>
+        </center>
+        <form id="formulario" action="">
+          <div class="container" id="tabla">
+            <div class="row">
+              <div class="col-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="diseño1" scope="col">Cod.</th>
+                      <th class="diseño1" scope="col">Detalle del producto</th>
+                      <th class="diseño1" scope="col">Precio</th>
+                      <th class="diseño1" scope="col">Cantidad</th>
+                      <th class="diseño1" scope="col">Total</th>
+                      <th class="diseño1" scope="col">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="fila">
+                      <th class="cod" scope="row">1</th>
+                      <td class="descripcion">Nombre del producto </td>
+                      <td class="precio_carro">$120,00</td>
+                      <td class="cantidad_carro">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" value="20" min="1" max="100">
+                        <div class="valid-feedback">
+                          OK!
+                        </div>
+                        <div class="invalid-feedback">
+                          Ingresa cantidad valida.
+                        </div>
+                      </td>
+                      <td class="total_carro">$1200,00</td>
+                      <td class="eliminar_carro"><button >X</button> </td> 
+                    </tr>
+                    <tr id="fila">
+                      <th class="cod" scope="row">2</th>
+                      <td class="descripcion">Nombre del producto </td>
+                      <td class="precio_carro">$1120,00</td>
+                      <td class="cantidad_carro">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" value="10" min="1" max="100">
+                        <div class="valid-feedback">
+                          OK!
+                        </div>
+                        <div class="invalid-feedback">
+                          Ingresa cantidad valida.
+                        </div>
+                      </td>
+                      <td class="total_carro">$11200,00</td>
+                      <td class="eliminar_carro"><button >X</button> </td> 
+                    </tr>
+                    <tr id="fila">
+                      <th class="cod" scope="row">3</th>
+                      <td class="descripcion">Nombre del producto </td>
+                      <td class="precio_carro">$820,00</td>
+                      <td class="cantidad_carro">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" value="10" min="1" max="100">
+                        <div class="valid-feedback">
+                          OK!
+                        </div>
+                        <div class="invalid-feedback">
+                          Ingresa cantidad valida.
+                        </div>
+                      </td>
+                      <td class="total_carro">$8200,00</td>
+                      <td class="eliminar_carro"><button >X</button> </td> 
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="container">
+                <div class=" row ">
+                  <div class="col-12 col-md-7">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <table class="table">
+                      <tbody >
+                        <tr>
+                          <td >Sub Total</td>
+                          <td class="suma"> $200,00</td>
+                        </tr>
+                        <tr>
+                          <td>IVA 19%</td>
+                          <td class="suma"> $38,00</td>
+                        </tr>
+                        <tr>
+                          <td>Flete</td>
+                          <td class="suma"> $10,00</td>
+                        </tr>
+                        <tr>
+                          <td>Descuento</td>
+                          <td class="suma"> $45,00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Total</th>
+                          <td class="suma"> $293,00</td>
+                        </tr>
+                      </tbody>
+                    </table>   
+                  </div>
+                </div>
+              </div>  
+              <div class="col-12">
+                <a href="store.html">
+                  <button class="boton" type="button" >Volver</button>
+                </a> 
+                
+                <button id="pagar" class=" btn btn-primary" type="button" onclick="comprobar()">
+                  <i class="fas fa-money-bill-alt"></i>
+                  Pagar
+                </button>
+              </div>
+            </div>
+          </div>  
+        </form>
+             
+      </main>
+    </div>
+  <footer class="page-footer font-small special-color-dark pt-4 footer-content">
+    <!-- Footer Elements -->
+    <div class="container ">
+  
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fas fa-phone-alt"> Celular - 3205578798 </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-whatsapp"> WhatsApp - 3205578798</i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fas fa-envelope-open-text"> contacto@ecommerce.com.co</i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      MISIONTIC
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
+    <script src= "assets/js/store.js"></script>
+  </body>
+</html>
