@@ -68,7 +68,7 @@ header{
   
   /* Add a red background color to navbar links on hover */
   .barra a:hover, .miniMenu:hover .boton {
-    background-color: rgb(51, 133, 187);;
+    background-color: rgb(51, 133, 187);
   }
   
   /* Dropdown content (hidden by default) */
@@ -100,6 +100,12 @@ header{
   .miniMenu:hover .miniMenu-contenido {
     display: block;
   }
+.central{
+  border-radius: 3%;
+}
+.central i{
+  font-size: 50px;
+}
 #login{
   display: block;
 }
@@ -113,13 +119,6 @@ header{
 .finalFactura{
     text-align: right;
     padding-right: 15px;
-}
-.finalFactura>button{
-    color: white !important;
-    background-color: #f33f3f!important;
-}
-.finalFactura>button:hover{
-    background-color: rgb(51, 133, 187) !important;
 }
 .footer-content{
     padding-top: 20px;

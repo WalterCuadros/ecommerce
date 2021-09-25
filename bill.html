@@ -8,23 +8,23 @@
     <link rel="stylesheet" type="text/css" href="assets/css/stylen.css">
     <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/68beeb19ef.js" crossorigin="anonymous"></script>
+  
     <title>Resumen de compra</title>
 </head>
 <body>
-    <div  class="cabeza">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/>&nbsp; e-Commerce</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/>&nbsp; e-Commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-md-auto">
                     <li  class="nav-item dropdown">
-                        <a class="nav-item nav-link  mr-md-2" href="#">Nombre de usuario</a>
+                      <a class="nav-item nav-link  mr-md-2" href="#">'+nombre+'</a>
                     </li>
                     <li class="nav-item">
-                      <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                      <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="carro.html" >
                         <i class="fas fa-cart-plus"></i>
                         Ir a carrito
                       </button>
@@ -34,69 +34,62 @@
                           Cerrar Sesión
                         </button>
                     </li>
-                  </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="barra">
-            <a href="index.html" ><i class="fas fa-home"></i>Inicio</a>
-            <div class="miniMenu">
-                <button class="boton">Usuario
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="miniMenu-contenido">
-                    <a href="login.html" >Login</a>
-                    <a href="datos.html" >Datos</a>
-                </div>
+                </ul>
             </div>
-            <a href="store.html" >Tienda</a>
-            <a href="#" >Contactanos</a>
-        </div>
-    </div>
+        </nav>
+    </header>
     <br>    
-    <div class="central">
-        <center>
-        <div class="factura">
-        <h2>Resumen de compra</h2>
-        <h4>Pepito Perez _____ 80.331.215</h4>
-        <table border=3>
-            <tr>
-                <th>Codigo</th>
-                <th>Cant.</th>
-                <th>Producto</th>
-                <th>Valor</th>
-                <th>Iva</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>ZN15D40</td>
-                <td>1</td>
-                <td>Zapatos deportivos Nike</td>
-                <td>$150.000</td>
-                <td>$0</td>
-                <td>$150.000</td>
-            </tr>
-            <tr>
-                <td>ZN15D40</td>
-                <td>1</td>
-                <td>Camisa Tipo Polo Arturo Calle</td>
-                <td>$90.000</td>
-                <td>$2500</td>
-                <td>$92.500</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>$240.000</td>
-                <td>$2500</td>
-                <td>$242.500</td>
-            </tr>
-        </table>
+    <div class="container">
+    <center>
+      <h2>Resumen de compra</h2>
+      <div class="col-12 col-md-4">
+        <h4>Pepito Perez</h4>
+      </div>
+      <div class="col-12 col-md-4">
+        <h4> 80.331.215</h4>
+      </div>
+      <div class="table-resposive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Cant.</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Iva</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">ZN15D40</th>
+            <td>1</td>
+            <td>Zapatos deportivos Nike</td>
+            <td>$150.000</td>
+            <td>$0</td>
+            <td>$150.000</td>
+          </tr>
+          <tr>
+            <th scope="row">ZN15D40</th>
+            <td>1</td>
+            <td>Camisa Tipo Polo Arturo Calle</td>
+            <td>$90.000</td>
+            <td>$2500</td>
+            <td>$92.500</td>
+          </tr>
+          <tr>
+            <td colspan="3">Total </td>
+            <td>$240.000</td>
+            <td>$2500</td>
+            <td>$242.500</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
         <div class="finalFactura">
             <p>Puntos de la compra: 150</p>
-            <button type="button" class="btn btn-sm">Cancelar</button>&nbsp;&nbsp;&nbsp;
-            <button type="button" class="btn btn-sm">Pagar</button>
+            <button type="button" class="btn btn-danger" href="carro.html">Cancelar</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-success" href="store.html">Pagar</button>
         </div><br/>
         </div>
         </center>
@@ -147,5 +140,7 @@
 
       
       </footer>
+
+
 </body>
 </html>
