@@ -1,6 +1,6 @@
 function comprobar(){   
   form = $("#formulario")
-  var numero =document.getElementById("cantidad1")
+  var numero =document.getElementById("cantidad")
   if(numero.value <= 0){
     numero.setCustomValidity("Invalid field.")
   }else{
