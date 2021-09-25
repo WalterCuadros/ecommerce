@@ -18,7 +18,6 @@ body{
     
 }
 
-
 .login-form{
     background: rgba(0, 0, 0, .7);
     border: none;
@@ -87,7 +86,6 @@ input[type="validar"]{
     transition: 0.3s all;
  
 }
-
 input[type="submit"]:hover{
     background : #000000;
     transition: 0.3s all;
