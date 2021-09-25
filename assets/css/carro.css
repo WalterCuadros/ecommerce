@@ -52,6 +52,7 @@ nav, .footer-copyright {
 }
 .cantidad_carro{
     text-align: center;
+    width: 10%;
 }
 .eliminar_carro{
     text-align: center;

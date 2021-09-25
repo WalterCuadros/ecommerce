@@ -13,128 +13,157 @@
 <body>
     <!--header colocar logos y menu-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="store.html"><img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-md-auto">
-                <li  class="nav-item dropdown">
-                    <a class="nav-item nav-link  mr-md-2" href="index.html">Nombre de usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a href="bill.html">
-                        <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" >
-                            <i class="fas fa-money-bill-alt"></i>
-                            Ir a Pagar
-                        </button>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html">
-                        <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" >
-                           Cerrar Sesión      
-                        </button>
-                    </a> 
-                </li>
-              </ul>
-            </div>
-        </nav>
-    </header>
+      <nav class="navbar navbar-expand-lg py-3 shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <!-- Logo Image -->
+            <img src="assets/img/logo1.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+            <!-- Logo Text -->
+            <span class="text-uppercase font-weight-bold">ECOMMERCE</span>
+          </a>
+      
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+      
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="bill.html">
+                  <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                  <i class="fas fa-money-bill-alt"></i>
+                  Ir a Pagar
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item"> 
+                <a href="index.html">
+                  <button class="btn-white nav-item nav-link  mr-md-2 btn btn-outline-light" type="button" href="#" >
+                    Cerrar Sesión
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  </header>
 
     <main>
-        <center>
-           <h1>RESUMEN CARRITO DE COMPRAS</h1>
-           <h2>Su carrito de compras contiene:</h2>
-        </center>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="diseño1" scope="col">Cod.</th>
-                            <th class="diseño1" scope="col">Detalle del producto</th>
-                            <th class="diseño1" scope="col">Precio</th>
-                            <th class="diseño1" scope="col">Cantidad</th>
-                            <th class="diseño1" scope="col">Total</th>
-                            <th class="diseño1" scope="col">Eliminar</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th class="cod" scope="row">1</th>
-                            <td class="descripcion">Nombre del producto </td>
-                            <td class="precio_carro">$120,00</td>
-                            <td class="cantidad_carro"><input type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
-                            <td class="total_carro">$1200,00</td>
-                            <td class="eliminar_carro"><button >X</button> </td> 
-                          </tr>
-                          <tr>
-                            <th class="cod" scope="row">2</th>
-                            <td class="descripcion">Nombre del producto </td>
-                            <td class="precio_carro">$1120,00</td>
-                            <td class="cantidad_carro"><input type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
-                            <td class="total_carro">$11200,00</td>
-                            <td class="eliminar_carro"><button >X</button> </td> 
-                          </tr>
-                          <tr>
-                            <th class="cod" scope="row">3</th>
-                            <td class="descripcion">Nombre del producto </td>
-                            <td class="precio_carro">$820,00</td>
-                            <td class="cantidad_carro"><input class="numero" type="number" id="catidad" name="cantidad" value="10" min="1" max="100"></td>
-                            <td class="total_carro">$8200,00</td>
-                            <td class="eliminar_carro"><button >X</button> </td> 
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-                <div class="container">
-                    <div class=" row justify-content-center">
-                      <div class="col-4">
-                        <table class="table">
-                            <tbody >
-                            <tr>
-                                <td >Sub Total</td>
-                                <td class="suma"> $200,00</td>
-                            </tr>
-                            <tr>
-                                <td>IVA 19%</td>
-                                <td class="suma"> $38,00</td>
-                            </tr>
-                            <tr>
-                                <td>Flete</td>
-                                <td class="suma"> $10,00</td>
-                            </tr>
-                            <tr>
-                                <td>Descuento</td>
-                                <td class="suma"> $45,00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Total</th>
-                                <td class="suma"> $293,00</td>
-                            </tr>
-                            </tbody>
-                        </table>   
+      <center>
+        <h1>RESUMEN CARRITO DE COMPRAS</h1>
+        <h2>Su carrito de compras contiene:</h2>
+      </center>
+      <form id="formulario" action="">
+        <div class="container" id="tabla">
+          <div class="row">
+            <div class="col-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="diseño1" scope="col">Cod.</th>
+                    <th class="diseño1" scope="col">Detalle del producto</th>
+                    <th class="diseño1" scope="col">Precio</th>
+                    <th class="diseño1" scope="col">Cantidad</th>
+                    <th class="diseño1" scope="col">Total</th>
+                    <th class="diseño1" scope="col">Eliminar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="fila">
+                    <th class="cod" scope="row">1</th>
+                    <td class="descripcion">Nombre del producto </td>
+                    <td class="precio_carro">$120,00</td>
+                    <td class="cantidad_carro">
+                      <input type="number" class="form-control" id="cantidad1" name="cantidad" value="20" min="1" max="100">
+                      <div class="valid-feedback">
+                        OK!
                       </div>
-                    </div>
-                </div>  
-                <div class="col-12">
-                    <a href="store.html">
-                        <button class="boton" type="button" >
-                           Volver     
-                        </button>
-                    </a> 
-                    <a href="bill.html">
-                        <button class="boton" type="button" >
-                            <i class="fas fa-money-bill-alt"></i>
-                            Pagar
-                        </button>
-                    </a>
-                </div>
+                      <div class="invalid-feedback">
+                        Ingresa cantidad valida.
+                      </div>
+                    </td>
+                    <td class="total_carro">$1200,00</td>
+                    <td class="eliminar_carro"><button >X</button> </td> 
+                  </tr>
+                  <tr id="fila">
+                    <th class="cod" scope="row">2</th>
+                    <td class="descripcion">Nombre del producto </td>
+                    <td class="precio_carro">$1120,00</td>
+                    <td class="cantidad_carro">
+                      <input type="number" class="form-control" id="cantidad1" name="cantidad" value="10" min="1" max="100">
+                      <div class="valid-feedback">
+                        OK!
+                      </div>
+                      <div class="invalid-feedback">
+                        Ingresa cantidad valida.
+                      </div>
+                    </td>
+                    <td class="total_carro">$11200,00</td>
+                    <td class="eliminar_carro"><button >X</button> </td> 
+                  </tr>
+                  <tr id="fila">
+                    <th class="cod" scope="row">3</th>
+                    <td class="descripcion">Nombre del producto </td>
+                    <td class="precio_carro">$820,00</td>
+                    <td class="cantidad_carro">
+                      <input type="number" class="form-control" id="cantidad1" name="cantidad" value="10" min="1" max="100">
+                      <div class="valid-feedback">
+                        OK!
+                      </div>
+                      <div class="invalid-feedback">
+                        Ingresa cantidad valida.
+                      </div>
+                    </td>
+                    <td class="total_carro">$8200,00</td>
+                    <td class="eliminar_carro"><button >X</button> </td> 
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </div>     
+            <div class="container">
+              <div class=" row justify-content-center">
+                <div class="col-4">
+                  <table class="table">
+                    <tbody >
+                      <tr>
+                        <td >Sub Total</td>
+                        <td class="suma"> $200,00</td>
+                      </tr>
+                      <tr>
+                        <td>IVA 19%</td>
+                        <td class="suma"> $38,00</td>
+                      </tr>
+                      <tr>
+                        <td>Flete</td>
+                        <td class="suma"> $10,00</td>
+                      </tr>
+                      <tr>
+                        <td>Descuento</td>
+                        <td class="suma"> $45,00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Total</th>
+                        <td class="suma"> $293,00</td>
+                      </tr>
+                    </tbody>
+                  </table>   
+                </div>
+              </div>
+            </div>  
+            <div class="col-12">
+              <a href="store.html">
+                <button class="boton" type="button" >Volver</button>
+              </a> 
+              
+              <button id="pagar" class="boton" type="button" onclick="comprobar()">
+                <i class="fas fa-money-bill-alt"></i>
+                Pagar
+              </button>
+            </div>
+          </div>
+        </div>  
+      </form>
+           
     </main>
     
     <footer class="page-footer font-small teal pt-4">
@@ -180,5 +209,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
+    <script src= "assets/js/carro.js"></script>
 </body>
 </html>
