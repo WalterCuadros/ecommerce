@@ -25,3 +25,7 @@ header{
     background-color: rgb(208 220 228) !important;
     color:white
 }
+.cart-button{
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+}
