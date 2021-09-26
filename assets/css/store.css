@@ -1,24 +1,5 @@
 /* Autor: Walter Giovanny Cuadros Rincón */
 
-header{
-    position: sticky;
-    top: 0;
-    z-index: 1071;
-}
- nav, .footer-copyright {
-    background-color: rgb(36, 93, 131) !important;
-    padding: 20px !important;
-    border-bottom: 1px solid rgb(36, 34, 34);
-    color: white;
-}
-.nav-item > a, .navbar-brand{
-    color: white!important;
-}
-
-.navbar-toggler{
-    color: rgba(125,125,125,.5);
-    border-color: rgba(226, 223, 208, 0.829)!important;
-}
 .masthead {
     margin: auto;
     height: 50vh;
@@ -60,8 +41,4 @@ header{
     
     color: black!important;
 }
-.footer-content{
-    padding-top: 20px;
-    background-color: rgb(51, 133, 187) !important;
-    color:white
-}
+
