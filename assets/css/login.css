@@ -24,7 +24,7 @@ nav, .footer-copyright {
     color: white;
     margin: 10px;
 }
-.container{
+.container1{
     width: 350px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.513);
@@ -69,19 +69,28 @@ nav, .footer-copyright {
 .iniciar{
     text-align: center;
     color: white;
+}
+.row{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    align-content: center;
     
 }
-.register .row{
-    width: 600px;
+
+.container2{
+    width: 450px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.513);
-    
+    align-items: center;
+    align-content: center;
+
 }
 h1{
     color: rgb(255, 255, 255);
     
 }
-.register{
+#register{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +102,7 @@ h1{
     color: rgb(0, 0, 0);
 }
 .diseño_input{
+    width: 400px;
     display: block;
     margin: 10px auto;
     padding: 5px 10px;
@@ -100,6 +110,7 @@ h1{
     outline: none;
     background-color: rgba(255, 255, 255, 0.726);
 }
+
 .diseño_label{
     color: rgba(255, 255, 255, 0.945);
     padding: 20px 0px 0px ;

@@ -21,8 +21,8 @@
 
 
 
-    <div>
-        <form class="register">
+      <form id="register">
+        <div class="container2">
           <div class="row">
             <h1 class="titulo">CREA TU CUENTA</h1>
             <label class="diseño_label" for="nombre" >Ingrese nombre</label>
@@ -38,7 +38,7 @@
             <label class="diseño_label" for="contraseña2" >Confirme contraseña</label>
             <input class="diseño_input" type="password" id="contraseña2" name="contraseña2" maxlength="100" placeholder="confirmar contraseña">
             <label class="diseño_label" for="pais de residencia">país de residencia</label>
-            <select class="diseño_input" name="país" id="país">
+            <select class="diseño_input" name="pais" id="país">
               <option value="AF">Afganistán</option>
               <option value="AL">Albania</option>
               <option value="DE">Alemania</option>
@@ -287,11 +287,11 @@
               <option value="ZM">Zambia</option>
               <option value="ZW">Zimbabue</option>
             </select>            
-            <button class="btn-registro">Registrarse</button><br>
+            <button class="btn-registro" id="btnr" type="button" onclick="validar_registro()">Registrarse</button><br>
             <a class="iniciar" href="Login.html">Iniciar sesion</a>
-          </div>  
-        </form>
-    </div>
+          </div>
+        </div>  
+      </form>
 
 
 

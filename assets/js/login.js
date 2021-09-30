@@ -24,3 +24,16 @@ function validar_login() {
     }
 }
 
+function validar_registro() { 
+    var formulario = document.getElementById("register");
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellidos").Value;
+    var fecha = document.getElementById("fecha de nacimiento").Value;
+    var correo = document.getElementById("email").Value;
+    var contraseña = document.getElementById("contraseña").Value;
+    var pais = document.getElementById("pais").Value;
+    var boton = document.getElementById("btnr");
+    var datos_correctos=true;
+    
+}
+
