@@ -1,29 +1,87 @@
-maximun-scale=1.0, minimun_scale=1.0"></head>    
-<link rel= "stylesheet" href="style.css"
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ecomerce</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximun-scale=1.0, minimun_scale=1.0">    
+    <link rel= "stylesheet" href="style.css"
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="store2per.html"><img class="logo" src="img/logo1.jpg" width="120" height="88" alt="ECOMMERCE"/>&nbsp; e-Commerce</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        
+      </nav>
+  </header>
+</head>,
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="store2per.html"><img class="logo" src="assets/img/logo1.png" width="120" height="88" alt="ECOMMERCE"/>&nbsp; e-Commerce</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+  
+  
+  <main>
+  
+   <h1>Bienvenido</h1>
+    <form action="" class="formulario" id="formulario">    
+      <div class = "formulario__grupo " id="grupo__usuario" >
+          <label for= "usuario" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input"   name="usuario" id="usuario">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+              <p class="formulario__input-error">Usuario incorrecto</p>
+      </div>   
+        <div class="formulario__grupo"id="grupo__nombre">  
+         <label for= "nombre" class="formulario__label">nombre</label>
+         <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+            <p class="formulario__input-error">nombre incorrecto</p>
         </div>
-    </nav>
-</header>
-<div class = "login-form">
-  <h1>Bienvenido</h1>
-  <form action="#" method="post">
-      <p>Usuario</p>
-      <input type="text" name="username"  required=""/>
-      <p>Contraseña</p>
-      <input type="password" name="password"  required=""/>
-      <input type="validar" value="validar">   
+        <div class="formulario__grupo"id="grupo__password">  
+          <label for= "password" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+             <input type="password" class="formulario__input" name="password" id="password">
+             <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+             <p class="formulario__input-error">contraseña incorrecta</p>
+        </div> 
+        <div class="formulario__grupo"id="grupo__password2">  
+          <label for= "password2" class="formulario__label">confirmarContraseña</label>
+          <div class="formulario__grupo-input">
+             <input type="password" class="formulario__input" name="password2" id="password2">
+             <i class="formulario__validacion-estado fas fa-times-circle"></i>
+           </div>
+             <p class="formulario__input-error">contraseña incorrecta</p>
+         </div>
+         <div class="formulario__grupo"id="grupo__correo">  
+          <label for= "correo" class="formulario__label">correo electronico</label>
+          <div class="formulario__grupo-input">
+             <input type="password" class="formulario__input" name="correo" id="correo">
+             <i class="formulario__validacion-estado fas fa-times-circle"></i>
+           </div>
+             <p class="formulario__input-error">correo incorrecto</p>
+         </div> 
+         <div class="formulario__grupo"id="grupo__telefono">  
+          <label for= "telefono" class="formulario__label">telefono</label>
+          <div class="formulario__grupo-input">
+             <input type="text" class="formulario__input" name="telefono" id="telefono">
+             <i class="formulario__validacion-estado fas fa-times-circle"></i>
+           </div>
+             <p class="formulario__input-error">telefono incorrecto</p>
+         </div>   
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>rellenar nuevamente</p>
+          </div>
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">validar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">validado correctamente</p>
+          </div>
     </form>
-<a href="#">Recuperar contraseña</a>
 
-</div>
+
 <div class = "login-form">
 <footer class="page-footer font-small teal pt-4">
 <!-- Footer Text -->
@@ -56,7 +114,9 @@ maximun-scale=1.0, minimun_scale=1.0"></head>
   <a href="#"> MISIONTIC ECOMMERCE</a>
 </div>
 </div> 
-</footer>   
-
+</footer>
+<script src="Js/enjava.JS"></script>     
+<script src="https://kit.fontawesome.com/b5bf20a987.js" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>   
+
