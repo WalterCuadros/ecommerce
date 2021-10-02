@@ -24,22 +24,23 @@ nav, .footer-copyright {
     color: white;
     margin: 10px;
 }
-.login .row{
+.container1{
     width: 350px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.513);
 }
 
 
-.login{
+#login{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/bodega.jpg');
-    background-size: cover;
+    background-image: url(../img/login\ 3.jpg); 
+    background-size: cover ;
+    background-attachment: fixed;    
 }
 
-.usuario, .contra{
+.form-control{
     width: 200px;
     display: block;
     margin: 20px auto;
@@ -47,9 +48,9 @@ nav, .footer-copyright {
     text-align: center;
     border-radius: 90px;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.657);
+    background-color: rgba(255, 255, 255, 0.822);
 }
-.usuario:focus, .contra:focus{
+.form-control:focus{
     width: 350px;
 }
 .btn-inicio{
@@ -57,7 +58,8 @@ nav, .footer-copyright {
     border-radius: 30px;
     width: 200px;
     height: 35px;
-    background: linear-gradient(to right, #4ba4e7 ,#3962df );
+    background: linear-gradient(to right, #3595df ,#3962df );
+
 }
 .btn-inicio:hover,:focus{  
     width: 250px;
@@ -67,23 +69,32 @@ nav, .footer-copyright {
 .iniciar{
     text-align: center;
     color: white;
+}
+.row{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    align-content: center;
     
 }
-.register .row{
-    width: 600px;
+
+.container2{
+    width: 450px;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.513);
-    
+    align-items: center;
+    align-content: center;
+
 }
 h1{
     color: rgb(255, 255, 255);
     
 }
-.register{
+#register{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/ecommerce/assets/bodega.jpg);
+    background-image: url(../img/ecommerce.jpg);
     background-size: cover;
    
 }
@@ -91,6 +102,7 @@ h1{
     color: rgb(0, 0, 0);
 }
 .diseño_input{
+    width: 400px;
     display: block;
     margin: 10px auto;
     padding: 5px 10px;
@@ -98,6 +110,7 @@ h1{
     outline: none;
     background-color: rgba(255, 255, 255, 0.726);
 }
+
 .diseño_label{
     color: rgba(255, 255, 255, 0.945);
     padding: 20px 0px 0px ;
