@@ -1,23 +1,15 @@
-header{
-    position: static;
-    z-index: 0;
+*{
+    box-sizing: border-box;
 }
-nav, .footer-copyright {
-    background-color: rgba(255, 93, 29, 0.644);
-    padding: 20px !important;
-    border-bottom: 1px solid rgb(36, 34, 34);
-    color: white;
-}
-
 body{
     font-family: sans-serif;
-    width:100%;
+    width: cover;
     text-transform: uppercase;
-    background-size: cover;
+    background: url(img/bodega.jpg) no-repeat 0px 0px;
+    background-size: 120%;
     
 }
-
-.login-form{
+main{
     background: rgba(0, 0, 0, .7);
     border: none;
     outline: none;
@@ -29,12 +21,21 @@ body{
     font-size: 14px;
     color: #fff;
 
-
-   
-    
 }
 
-h1 {
+footer{
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid#ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+h1{
    text-align: center;
    font-size:  60px;
    font-weight: bold;
@@ -43,31 +44,80 @@ h1 {
    color:rgba(255, 93, 29, 0.644);
 
 }
-
-form{
-    margin: 0 auto;
+.formulario{
+    display: grid;
 }
-form p{
-    font-size: 15px;
-    margin-top: 44px;
-    padding: 0.3;
-    color:rgba(255, 93, 29, 0.644);
+.formulario__label{
+    display:block;
+    font-weight: 700;
+    padding: 50px;
+    cursor: pointer;
+    text-align:center;
 }
-.login-form form input[type="text"], input[type="password"]{
-    outline:none;
+.formulario__grupo-input{
+    position: relative;
+}
+.formulario__input{
+    
     font-size: 1em;
     color:rgba(255, 93, 29, 0.644);
     padding: 15px 10px;
     margin : 0auto;
-    width: 95%;
-    border: none;
+    width: 100%;
+    text-align:center;
+    border:  transparent;
     border-bottom: 1px solid rgba(255, 93, 29, 0.644);
+    background:  transparent;
+    transition: .3s ease all;
+    cursor:unset;
+}
+.formulario__input:focus{
+    background:  rgba(66, 64, 64, 0.644);
+    outline:  none;
+}
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo{
     display: block;
-    background: transparent;
-
+}
+.formulario__validacion-estado{
+    position:absolute;
+    right: 20px;
+    bottom: 16px;
+    z-index:100;
+    font-size:30px;
+    opacity: 0;
+    
+}
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+    grid-column: span 1;
+}
+.formulario__mensaje{
+    height: 30px;
+    background: #c25151;
+    padding: 0 15;
+    border-radius:3px;
+    display: none;
+}
+.formulario__mensaje-activo{
+    display:block;
 }
 
-input[type="validar"]{
+.formulario__mensaje p {
+    margin:0;
+}
+
+.formulario__grupo-btn-enviar{
+    
+    flex-direction: colum;
+    align-items: center;
+    
+}
+.formulario__btn{
     width: 100;
     outline: none;
     display: block;
@@ -80,16 +130,37 @@ input[type="validar"]{
     background:#ff7300;
     border: none;
     color:rgba(0, 0, 0, 0.644);
-    text-align:center;
     cursor: pointer;
-    transition: 0.3s all;
- 
+    transition: .1s ease all;
 }
-input[type="submit"]:hover{
-    background : #000000;
-    transition: 0.3s all;
+.formulario__btn:hover{
+    box-shadow: #ffe4ca;
 }
-.login-form a {
+
+.formulario__mensaje-exito{
+    font-size:  14px;
+    color:#119200;
+    display: none;
+}
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #df8d3b;
+    opacity: 1;
+
+}
+.formulario__grupo-incorrecto .formulario__validacion-label{
+    color: #c25151;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #c25151;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+border:3px solid#bb2929;
+}
+.logina{
     display:block;
     font-size:15px;
     color:rgba(255, 255, 255, 0.644);
@@ -97,9 +168,13 @@ input[type="submit"]:hover{
     margin: 31px;
     transition: 0.3s all;
 }
-
-.login-form a :hover{
+.logina :hover{
     color:#ffffff;
     transition:0.3s all;
 
 }
+
+
+
+
+
