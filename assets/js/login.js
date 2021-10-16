@@ -15,25 +15,94 @@ function validar_login() {
     if (formulario.contra.value=="") {
         formulario.contra.setAttribute("class","form-control is-invalid");
         datos_correctos=false;
+
     }else{
         formulario.contra.setAttribute("class", "form-control is-valid");
 
     }
     if (datos_correctos == true) {
-        boton.setAttribute("onclick", "location.href='store.html'");
+        boton.setAttribute("onclick", location.href='store.html');
     }
 }
 
-function validar_registro() { 
+
+
+
+function registro() {
     var formulario = document.getElementById("register");
     var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellidos").Value;
-    var fecha = document.getElementById("fecha de nacimiento").Value;
-    var correo = document.getElementById("email").Value;
-    var contraseña = document.getElementById("contraseña").Value;
-    var pais = document.getElementById("pais").Value;
+    var apellidos = document.getElementById("apellidos").value;
+    var nacimiento = document.getElementById("fecha_de_nacimiento").value;
+    var email = document.getElementById("email").value;
+    var contraseña = document.getElementById("contraseña1").value;
+    var contraseña2 = document.getElementById("contraseña2").value;
+    var pais = document.getElementById("país").value;
     var boton = document.getElementById("btnr");
-    var datos_correctos=true;
-    
+    var datos_correctos = true;
+
+    if (formulario.nombre.value=="") {
+        formulario.nombre.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;  
+
+    }else{
+        formulario.nombre.setAttribute("class","form-control is-valid");
+    }
+
+    if (formulario.apellidos.value=="") {
+        formulario.apellidos.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+
+    }else{
+        formulario.apellidos.setAttribute("class","form-control is-valid");
+    }
+    if (formulario.fecha_de_nacimiento.value=="") {
+        formulario.fecha_de_nacimiento.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+
+    }else{
+        formulario.fecha_de_nacimiento.setAttribute("class","form-control is-valid");        
+    }
+    if (formulario.email.value=="") {
+        formulario.email.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+    }else{
+        formulario.email.setAttribute("class","form-control is-valid");        
+    }
+
+    if (formulario.contraseña.value=="") {
+        formulario.contraseña.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+
+    }else{
+        formulario.contraseña.setAttribute("class","form-control is-valid");
+    }
+
+    if (formulario.contraseña2.value=="") {
+        formulario.contraseña2.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+
+    }else{
+        formulario.contraseña2.setAttribute("class","form-control is-valid");        
+    }
+    if (formulario.contraseña2.value !== contraseña) {
+        return formulario.contraseña2.setAttribute("class", "form-control is-invalid")
+    }
+
+    if (formulario.pais.value=="") {
+        formulario.pais.setAttribute("class","form-control is-invalid");
+        datos_correctos = false;
+
+    }else{
+        formulario.pais.setAttribute("class","form-control is-valid");   
+    }
+
+    if (datos_correctos == true) {
+        boton.setAttribute("onclik",location.href='store.html');
+    }
+
+
 }
+
+
+
 

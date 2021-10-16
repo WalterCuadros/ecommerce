@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
-    <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css">
+    <script src="assets/js/login.js"></script>
     <title>Registro e-Commerce</title>
 </head>
 <body>
@@ -19,26 +19,27 @@
     </header>
 
 
-
+    
 
       <form id="register">
         <div class="container2">
           <div class="row">
             <h1 class="titulo">CREA TU CUENTA</h1>
             <label class="diseño_label" for="nombre" >Ingrese nombre</label>
-            <input class="diseño_input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Nombre">
             <label class="diseño_label" for="apellidos">Ingrese apellidos</label>
-            <input class="diseño_input" type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+            <input class="form-control" id="apellidos" type="text"  name="apellidos" placeholder="Apellidos">
             <label class="diseño_label" for="fecha de nacimiento"> Fecha de nacimiento</label>
-            <input class="diseño_input" type="date" id="fecha de nacimiento" name="fecha de nacimiento">
+            <input class="form-control" id="fecha_de_nacimiento" type="date"  name="fecha de nacimiento">
             <label class="diseño_label" for="email">Correo electronico</label>
-            <input class="diseño_input" type="text" id="email" name="email" maxlength="255" placeholder="ejemplo@correo.com">
+            <input class="form-control" id="email" type="email"  name="email" maxlength="255" placeholder="ejemplo@correo.com">
             <label class="diseño_label" for="contraseña1" >Ingrese contraseña</label>
-            <input class="diseño_input" type="password" id="contraseña" name="contraseña" maxlength="100" placeholder="contraseña">
+            <input class="form-control" id="contraseña1" type="password"  name="contraseña" maxlength="100" placeholder="contraseña">
             <label class="diseño_label" for="contraseña2" >Confirme contraseña</label>
-            <input class="diseño_input" type="password" id="contraseña2" name="contraseña2" maxlength="100" placeholder="confirmar contraseña">
+            <input class="form-control" id="contraseña2" type="password" name="contraseña2" maxlength="100" placeholder="confirmar contraseña">            
             <label class="diseño_label" for="pais de residencia">país de residencia</label>
-            <select class="diseño_input" name="pais" id="país">
+            <select class="form-control" id="país" name="pais" >
+              <option value=""></option>
               <option value="AF">Afganistán</option>
               <option value="AL">Albania</option>
               <option value="DE">Alemania</option>
@@ -83,7 +84,7 @@
               <option value="CL">Chile</option>
               <option value="CN">China</option>
               <option value="CY">Chipre</option>
-              <option value="CO" selected="">Colombia</option>
+              <option value="CO">Colombia</option>
               <option value="KM">Comoras</option>
               <option value="CG">Congo</option>
               <option value="KR">Corea del Sur</option>
@@ -286,8 +287,8 @@
               <option value="DJ">Yibuti</option>
               <option value="ZM">Zambia</option>
               <option value="ZW">Zimbabue</option>
-            </select>            
-            <button class="btn-registro" id="btnr" type="button" onclick="validar_registro()">Registrarse</button><br>
+            </select>                         
+            <button class="btn-registro" id="btnr" type="button" onclick="registro()">Registrarse</button>
             <a class="iniciar" href="Login.html">Iniciar sesion</a>
           </div>
         </div>  
@@ -298,33 +299,23 @@
 
 
 
-    <footer class="page-footer font-small teal pt-6">
-        <!-- Footer Text -->
-        <div class="container-fluid text-md-left text-md-left footer-content">
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-              <!-- Content -->
+    <footer class="page-footer font-small teal pt-6">      
+        <div class="container-fluid text-md-left text-md-left footer-content">         
+          <div class="row">            
+            <div class="col-md-6 mt-md-0 mt-3">              
               <h5 class="text-uppercase font-weight-bold">eCommerce</h5>
               <p>Esta pagina pertenece a eCommerce el cual es el nuevo supermercado Virtual, que ofrece calidad,
                    precio y facilidad en las compras.</p>
-            </div>
-            <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <!-- Grid column -->
-            <div class="col-md-6 mb-md-0 mb-3">
-              <!-- Content -->
+            </div>            
+            <hr class="clearfix w-100 d-md-none pb-3">            
+            <div class="col-md-6 mb-md-0 mb-3">              
               <h5 class="text-uppercase font-weight-bold">Contactanos</h5>
               <p><i class="fas fa-phone-alt"></i> Celular - 3205578798</p>
               <p><i class="fab fa-whatsapp"></i> WhatsApp - 3205578798</p>
               <p><i class="fas fa-envelope-open-text"></i> Correo. contacto@ecommerce.com.co</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
-        </div>
-        <!-- Footer Text -->
+            </div>            
+          </div>          
+        </div>        
         <div class="footer-copyright text-center py-3">© 2021 Copyright:
           <a href="#"> MISIONTIC ECOMMERCE</a>
         </div>

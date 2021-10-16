@@ -13,7 +13,15 @@ nav, .footer-copyright {
     background-color: rgb(51, 133, 187) !important;
     color:white
 }
-
+.row{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    align-content: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
 .titulo{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -65,63 +73,5 @@ nav, .footer-copyright {
     width: 250px;
 }
 
-/*REGISTRO DE USUARIO*/
-.iniciar{
-    text-align: center;
-    color: white;
-}
-.row{
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    align-items: center;
-    align-content: center;
-    
-}
 
-.container2{
-    width: 450px;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.513);
-    align-items: center;
-    align-content: center;
-
-}
-h1{
-    color: rgb(255, 255, 255);
-    
-}
-#register{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/ecommerce.jpg);
-    background-size: cover;
-   
-}
-::placeholder{
-    color: rgb(0, 0, 0);
-}
-.diseño_input{
-    width: 400px;
-    display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
-    text-align: left; 
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.726);
-}
-
-.diseño_label{
-    color: rgba(255, 255, 255, 0.945);
-    padding: 20px 0px 0px ;
-    text-align: left;
-}
-
-.btn-registro{
-    margin: 40px auto;
-    border-radius: 30px;
-    width: 200px;
-    height: 35px;
-    background: linear-gradient(to right, #4ba4e7 ,#3962df );
-}
 
