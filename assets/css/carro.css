@@ -1,5 +1,7 @@
-/* Autor: Camilo Moreno*/
 /*----------- Header y footer--------------*/
+body{
+    background-image: url(../img/fondostore1.jpg);
+}
 .btn-white{
     color: white !important;
 }
@@ -13,38 +15,15 @@
 .boton{
     width: 17%;
     margin: 5px 180px;
-    background-color: rgb(36, 93, 131);
+    background: linear-gradient(to right, #3595df ,#3962df );
     color: white;
 }
-.boton:hover{
-    color: black!important;
-}
+
 .diseño1{
-    text-align: center;
-}
-.cod{
-    text-align: center;
-}
-.descripcion{
-    text-align: center;
-}
-.precio_carro{
-    text-align: center;
+    color: white;
+    align-items: center;
 }
 .cantidad_carro{
-    text-align: center;
-    width: 10%;
-}
-.eliminar_carro{
-    text-align: center;
-}
-.total_carro{
-    text-align: center;
-}
-.numero{
-    align-content:center ;
-}
-
-.suma{
-    text-align: right;
+    width: 1px;
+    height: 1px;
 }

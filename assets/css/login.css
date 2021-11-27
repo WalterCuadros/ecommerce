@@ -1,6 +1,11 @@
 /*INICIO DE SESION*/
+/*header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}*/
 nav, .footer-copyright {
-   background-color: rgb(36, 93, 131) !important;
+   background-color: rgba(17, 9, 61, 0.945) !important;
    padding: 20px !important;
    border-bottom: 1px solid rgb(36, 34, 34);
    color: white;
@@ -10,7 +15,7 @@ nav, .footer-copyright {
 }
 .footer-content{
     padding-top: 20px;
-    background-color: rgb(51, 133, 187) !important;
+    background-color: rgb(17, 9, 61, 0.945) !important;
     color:white
 }
 .row{
@@ -43,9 +48,10 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/login\ 3.jpg); 
-    background-size: cover ;
-    background-attachment: fixed;    
+    background-image: url(../img/logo\ .jpg); 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;    
 }
 
 .form-control{
@@ -56,7 +62,7 @@ h1{
     text-align: center;
     border-radius: 90px;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(253, 251, 251, 0.822);
 }
 .form-control:focus{
     width: 350px;
@@ -72,6 +78,4 @@ h1{
 .btn-inicio:hover,:focus{  
     width: 250px;
 }
-
-
 

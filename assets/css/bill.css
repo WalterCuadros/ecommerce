@@ -1,3 +1,6 @@
+body{
+    background-image: url(../img/fondostore1.jpg);
+}
 header{
     position: sticky;
     top: 0;
@@ -7,7 +10,7 @@ header{
     width: 46%;
 }
  nav, .footer-copyright {
-    background-color: rgb(36, 93, 131) !important;
+    background-color: rgb(17, 9, 61, 0.945) !important;
     padding: 20px !important;
     border-bottom: 1px solid rgb(36, 34, 34);
     color: white!important;
@@ -28,4 +31,8 @@ header{
 .cart-button{
     padding-left: 12px!important;
     padding-right: 12px!important;
+}
+.diseño1{
+    color: white;
+    align-items: center;
 }

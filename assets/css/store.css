@@ -1,16 +1,17 @@
-/* Autor: Walter Giovanny Cuadros Rincón */
-
+body{
+    background-image: url(../img/fondostore1.jpg);
+}
 .masthead {
     margin: auto;
     height: 50vh;
-    background-image: url('../img/banner.jpg');
+    background-image: url(../img/fondoestore.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .menu{
     margin: auto;
-    background-color: rgb(51, 133, 187);
+    background-color: rgb(17, 9, 61, 0.945);
     padding: 12px;
 }
 .list-products{
@@ -27,7 +28,7 @@
     background-color: #f33f3f!important;
 }
 .ver-detalle>button:hover{
-    background-color: rgb(51, 133, 187) !important;
+    background-color: rgb(17, 9, 61, 0.945) !important;
     margin-left: 0px;
 }
 .cantidad-producto{
@@ -40,5 +41,11 @@
 .btn-white:hover{
     
     color: black!important;
+}
+.precio_anterior{
+    color: #f33f3f;
+}
+.precio_descuento{
+    color: rgb(37, 228, 37);
 }
 
